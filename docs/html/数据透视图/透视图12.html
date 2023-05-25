@@ -3,6 +3,16 @@
         <meta charset="utf-8">
         <title>数据可视化</title>
         <link rel="stylesheet" href="../../styles/mainstyles.css">
+        <script>
+            function checkAnswer() {
+                var answer = document.querySelector('input[name="answer"]:checked').value;
+                if (answer == 4) {
+                    alert("回答正确！");
+                } else {
+                    alert("回答错误，请再试一次！");
+                }
+            }
+        </script>
     </head>
     <body>
         <!--页眉-->
@@ -29,18 +39,18 @@
                         <h2>数据透视图</h2>
                         <p>练习:品牌手机销量中，小米品牌手机的总销量是多少？ 注意要从下载的数据中做出结果。</p>
                         <p>
-                            <input type="radio" name="test1" value="1" id="A"> <label for="A">A、 3138493</label>
+                            <input type="radio" name="answer" value="1" id="A"> <label for="A">A、 3138493</label>
                         </p>
                         <p>
-                            <input type="radio" name="test1" value="2" id="B"> <label for="B">B、 3408595</label>
+                            <input type="radio" name="answer" value="2" id="B"> <label for="B">B、 3408595</label>
                         </p>
                         <p>
-                            <input type="radio" name="test1" value="3" id="C"> <label for="C">C、 3334278</label>
+                            <input type="radio" name="answer" value="3" id="C"> <label for="C">C、 3334278</label>
                         </p>
                         <p>
-                            <input type="radio" name="test1" value="4" id="D"> <label for="D">D、 3336561</label>
+                            <input type="radio" name="answer" value="4" id="D"> <label for="D">D、 3336561</label>
                         </p>
-
+                        <button type="button" onclick="checkAnswer()">提交</button>
                     </article>
                 </div>
 

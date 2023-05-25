@@ -3,6 +3,16 @@
         <meta charset="utf-8">
         <title>数据可视化</title>
         <link rel="stylesheet" href="../../styles/mainstyles.css">
+        <script>
+            function checkAnswer() {
+                var answer = document.querySelector('input[name="answer"]:checked').value;
+                if (answer == 1) {
+                    alert("回答正确！");
+                } else {
+                    alert("回答错误，请再试一次！");
+                }
+            }
+        </script>
     </head>
     <body>
         <!--页眉-->
@@ -31,17 +41,19 @@
                             练习:请点击切片看看北京的数据是多少呢？
                         </p>
                         <p>
-                            <input type="radio" name="test1" value="1" id="A"> <label for="A">A、 3332595</label>
+                            <input type="radio" name="answer" value="1" id="A">A、 3332595<br>
                         </p>
                         <p>
-                            <input type="radio" name="test1" value="2" id="B"> <label for="B">B、 3332695</label>
+                            <input type="radio" name="answer" value="2" id="B">B、 3332695<br>
                         </p>
                         <p>
-                            <input type="radio" name="test1" value="3" id="C"> <label for="C">C、 3442695</label>
+                            <input type="radio" name="answer" value="3" id="C">C、 3442695<br>
                         </p>
                         <p>
-                            <input type="radio" name="test1" value="4" id="D"> <label for="D">D、 3448595</label>
+                            <input type="radio" name="answer" value="4" id="D">D、 3448595<br>
                         </p>
+                        <br>
+                        <button type="button" onclick="checkAnswer()">提交</button>
                     </article>
                 </div>
 

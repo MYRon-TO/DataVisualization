@@ -1,71 +1,85 @@
 <html lang="zh-CN">
-    <head>
-        <meta charset="utf-8">
-        <title>数据可视化</title>
-        <link rel="stylesheet" href="../../styles/mainstyles.css">
-    </head>
-    <body>
-        <!--页眉-->
-        <!--<header>-->
-            <!--<h1>数据可视化</h1>-->
-        <!--</header>-->
+<head>
+    <meta charset="utf-8">
+    <title>数据可视化</title>
+    <link rel="stylesheet" href="../../styles/mainstyles.css">
+    <script>
+        function checkAnswer() {
+            var answer = document.querySelector('input[name="answer"]:checked').value;
+            if (answer == 3) {
+                alert("回答正确！");
+            } else {
+                alert("回答错误，请再试一次！");
+            }
+        }
+    </script>
+</head>
+<body>
+<!--页眉-->
+<!--<header>-->
+<!--<h1>数据可视化</h1>-->
+<!--</header>-->
 
-        <!--导航栏-->
-        <!--<nav>-->
-            <!--<ul>-->
-                <!--<li><a href="index.html">首页</a></li>-->
-                <!--<li><a href="index.html">首页</a></li>-->
-                <!--<li><a href="index.html">首页</a></li>-->
-            <!--</ul>-->
-        <!--</nav>-->
+<!--导航栏-->
+<!--<nav>-->
+<!--<ul>-->
+<!--<li><a href="index.html">首页</a></li>-->
+<!--<li><a href="index.html">首页</a></li>-->
+<!--<li><a href="index.html">首页</a></li>-->
+<!--</ul>-->
+<!--</nav>-->
 
-        <!--主内容-->
-        <main>
-            <!--主要内容-->
-            <div>
+<!--主内容-->
+<main>
+    <!--主要内容-->
+    <div>
 
-                <div class="text">
-                    <article>
-                        <h2>数据透视表</h2>
-                        <p>⑨根据上述操作得到的透视表结果进行回答，李二牛的销量是多少呢？
-                            （提示，上图中显示的数字非正确答案，请根据自己操作结果来进行选择正确答案。）</p>
-                        <p>
-                            <input type="radio" name="test1" value="1" id="A"> <label for="A">A、 3138493</label>
-                        </p>
-                        <p>
-                            <input type="radio" name="test1" value="2" id="B"> <label for="B">B、 3408595</label>
-                        </p>
-                        <p>
-                            <input type="radio" name="test1" value="3" id="C"> <label for="C">C、 3334278</label>
-                        </p>
-                        <p>
-                            <input type="radio" name="test1" value="4" id="D"> <label for="D">D、 3336561</label>
-                        </p>
-                    </article>
-                </div>
+        <div class="text">
+            <article>
+                <h2>数据透视表</h2>
+                <p>练习：根据上述操作得到的透视表结果进行回答，李二牛的销量是多少呢？
+                    （提示，上图中显示的数字非正确答案，请根据自己操作结果来进行选择正确答案。）</p>
 
-                +
-                <!--进度条-->
-                <div class="ProgressBar"> </div>
+                <p>
+                    <input type="radio" name="answer" value="1">A、 3138493<br>
+                </p>
+                <p>
+                    <input type="radio" name="answer" value="2">B、 3408595<br>
+                </p>
+                <p>
+                    <input type="radio" name="answer" value="3">C、 3334278<br>
+                </p>
+                <p>
+                    <input type="radio" name="answer" value="4">D、 3336561<br>
+                </p>
+                <br>
+                <button type="button" onclick="checkAnswer()">提交</button>
 
-            </div>
+            </article>
 
-            <!--侧边栏-->
-            <aside>
-                <div><a href="../课堂导入/课堂导入1.html">课堂导入</a></div>
-                <div><a href="../透视表/数据透视表1.html">透视表</a></div>
-                <div><a href="../切片器/切片器1.html">切片器</a></div>
-                <div><a href="../数据透视图/透视图1.html">数据透视图</a></div>
-                <div><a href="../知识点总结/知识点总结1.html">知识点总结</a></div>
-                <div><a href="./数据透视表10.html">继续</a></div>
-                <div><a href="./数据透视表8.html">返回</a></div>
-            </aside>
+        </div>
 
-        </main>
-        <!--页脚-->
-        <!--<footer>-->
-            <!--<p>版权所有</p>-->
-        <!--</footer>-->
+        <!--进度条-->
+        <div class="ProgressBar"></div>
 
-    </body>
+    </div>
+
+    <!--侧边栏-->
+    <aside>
+        <div><a href="../课堂导入/课堂导入1.html">课堂导入</a></div>
+        <div><a href="../透视表/数据透视表1.html">透视表</a></div>
+        <div><a href="../切片器/切片器1.html">切片器</a></div>
+        <div><a href="../数据透视图/透视图1.html">数据透视图</a></div>
+        <div><a href="../知识点总结/知识点总结1.html">知识点总结</a></div>
+        <div><a href="./数据透视表10.html">继续</a></div>
+        <div><a href="./数据透视表8.html">返回</a></div>
+    </aside>
+
+</main>
+<!--页脚-->
+<!--<footer>-->
+<!--<p>版权所有</p>-->
+<!--</footer>-->
+
+</body>
 </html>
