@@ -1,5 +1,9 @@
-html * {
-    border: 2px solid black;
+/*html * {*/
+    /*border: 2px solid black;*/
+/*}*/
+
+html {
+    background-color: #C1E6DC;
 }
 /*nav ul{*/
     /*display:flex;*/
@@ -19,10 +23,12 @@ main {
 
 /*主要内容*/
 main > div {
+    /*background-color: none;*/
     background-image: url("../images/黑板.png");
     background-size: 100% 100%;
     width: 85%;
     height: 95%;
+    box-shadow: 0 0 10px 5px #555555;
 
     display: block;
 }
@@ -44,9 +50,13 @@ main aside {
     /*margin: 0 2%;*/
 
 }
+
 main aside > div {
     margin: 10% 0;
     padding: 10%;
+    text-align: center;
+    background-color: green;
+    border-radius: 0 10px 10px 0;
 }
 main aside > div > span {
     margin: 10%;
@@ -55,7 +65,6 @@ main aside > div > span {
 
 /*进度条*/
 .ProgressBar {
-    margin: 0, 1%;
+    /*margin: 3%, 3%;*/
     height: 2%;
-
 }
