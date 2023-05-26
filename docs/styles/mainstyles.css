@@ -125,5 +125,17 @@ main aside > div > span {
 /*进度条*/
 .ProgressBar {
     /*margin: 3%, 3%;*/
-    height: 2%;
+    height: 53%;
+    width: 40%;
+    /*border: 3px solid red;*/
+    background-image: url("../images/老师.gif");
+    background-repeat: no-repeat;
+    margin-left: -24%;
+    margin-top: -27%;
+    transform: rotateY(180deg);
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
 }
